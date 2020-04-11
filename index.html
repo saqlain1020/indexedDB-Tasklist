@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Task List</h1>
+        <form id='inputForm'>
+            <input id= 'input'type="text" placeholder="Add Tasks...">
+            <button action='submit'>Add</button>
+        </form>
+        <h2>Task List</h2>
+        <div class="list">
+            <!-- <h3>&bull; Task 1&nbsp;&nbsp;&nbsp;<button id="t1done">DONE</button>&nbsp;&nbsp;&nbsp;<button id="t1delete">DELETE</button></h3> -->
+
+        </div>
+        <form>
+            <input type="text" id="search" placeholder="Search...">
+            <button id="all">All</button>
+            <button id="completed">Completed</button>
+            <button id="active">Active</button>
+        </form>
+        <div class="note" style="color:red;"><b>Note:</b> Click Update Tasks to save data<br>Click Read Data to read from DB and render List<br>Update will clear DB</div>
+        <button id="updateDB">Update Data</button>
+        <button id="readDB">Read Data</button>
+    </div>
+    <script src="DB.js"></script>
+    <!-- <script src="main.js"></script> -->
+</body>
+</html>
